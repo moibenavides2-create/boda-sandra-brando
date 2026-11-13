@@ -17,7 +17,7 @@ window.BODA = {
   WHATSAPP: "",
 
   /* Máximo de personas cuando el invitado entra por el link general (sin familia) */
-  MAX: 4,
+  MAX: 1,
 
   /* Platos del menú, en orden (1, 2, 3) */
   DISHES: [
