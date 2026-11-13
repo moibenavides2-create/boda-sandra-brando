@@ -30,8 +30,7 @@ window.BODA = {
      El link de cada una es:  index.html#enlace-corto
      (el panel admin.html te los genera con botón de WhatsApp) */
   FAMILIAS: [
-    ["Montes Benavides", "Familia Montes Benavides", 4],
-      ["Montes Benavides", "Familia Montes Benavides", 4],
+    ["montes-benavides", "Familia Montes Benavides", 4],
   ], 
 
   /* Lugar */
