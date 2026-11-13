@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Panel de novios · Sandra &amp; Brando</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,600&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap">
+<style>
+:root{--bg:#faf7f1;--ink:#3f3a36;--mu:#8a8478;--forest:#3b5646;--rose:#e8a0b4;--rose2:#d97a96;--gold:#b8923a;--gold2:#e0c981;--card:#fffdf9;--ok:#3b7a52;--no:#b4506a;--wait:#a98a3a}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-size:18px;color:var(--ink);background:var(--bg)}
+.script{font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400}
+.gold{background:linear-gradient(100deg,#8f6a1f,#d6b152,#a37a2b 55%,#e2c673,#8f6a1f);-webkit-background-clip:text;background-clip:text;color:transparent;padding:.3em .25em .22em;line-height:1.3}
+.sc{font-family:Montserrat,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;font-size:11px;color:var(--mu)}
+.hide{display:none!important}
+header{text-align:center;padding:22px 16px 6px}
+header h1{font-size:clamp(40px,9vw,56px);margin:0}
+main{max-width:1000px;margin:0 auto;padding:0 14px 60px}
+.card{background:var(--card);border:1px solid var(--gold2);border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 14px 30px -18px rgba(120,80,70,.35)}
+.btn{border:0;cursor:pointer;font:600 15px "Cormorant Garamond",Georgia,serif;letter-spacing:.1em;text-transform:uppercase;color:#fff;padding:11px 22px;border-radius:30px;background:linear-gradient(135deg,#b8923a,#dcc26e,#b8923a);text-decoration:none;display:inline-block}
+.btn.ghost{background:none;color:var(--forest);border:1px solid var(--gold2)}
+.btn.sm{font-size:13px;padding:7px 14px}
+input{width:100%;font:inherit;font-size:17px;color:var(--ink);background:#fff;border:1px solid var(--gold2);border-radius:12px;padding:11px;margin:6px 0}
+label{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin-top:10px}
+.login{max-width:380px;margin:30px auto}
+.err{color:var(--no);min-height:22px;font-size:16px;margin:6px 0}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin:6px 0 2px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button,.chips button{font:inherit;font-size:16px;padding:8px 16px;border-radius:24px;border:1px solid var(--gold2);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button.on,.chips button.on{background:var(--forest);color:#fff;border-color:var(--forest)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.tile{border:1px solid var(--gold2);border-radius:14px;padding:14px 10px;text-align:center;background:rgba(232,160,180,.08)}
+.tile b{display:block;font-size:38px;line-height:1.1}
+.tile span{font:400 10.5px Montserrat,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.dish{display:grid;grid-template-columns:minmax(120px,260px) 1fr 32px;gap:10px;align-items:center;margin:8px 0;font-size:17px}
+.dish i{display:block;height:14px;border-radius:8px;background:linear-gradient(90deg,var(--gold),var(--gold2));min-width:3px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:16px;text-align:left}
+th{font:400 10.5px Montserrat,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);padding:8px 8px}
+td{padding:9px 8px;border-top:1px solid var(--gold2);vertical-align:top}
+.st{display:inline-block;padding:2px 11px;border-radius:14px;font-size:14px;color:#fff;white-space:nowrap}
+.st.ok{background:var(--ok)}.st.no{background:var(--no)}.st.wait{background:var(--wait)}
+.mn div{white-space:nowrap}
+.x{border:0;background:none;color:var(--mu);cursor:pointer;font-size:20px;line-height:1}
+.x:hover{color:var(--no)}
+.lk{padding:12px 0;border-top:1px solid var(--gold2);display:grid;grid-template-columns:1fr;gap:4px}
+.lk:first-child{border-top:0}.lk small{color:var(--mu)}
+.lk .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.lk input{flex:1 1 220px;margin:0;font-size:15px}
+.note{font-size:15px;color:var(--mu)}
+.banner{background:#fff6d8;border:1px solid var(--gold2);border-radius:12px;padding:10px 14px;margin:10px 0;font-size:16px}
+@media(max-width:600px){.dish{grid-template-columns:1fr 32px}.dish div{grid-column:1/2;grid-row:2}.dish b{grid-row:1;grid-column:2}}
+code{background:#f3ecdc;padding:1px 6px;border-radius:6px;font-size:.9em}
+</style></head><body>
+<header><div class="sc">Panel de los novios</div><h1 class="script gold">Sandra &amp; Brando</h1></header>
+<main>
+<section id="setup" class="card hide"><b>Falta conectar Firebase.</b>
+<p>Pega las llaves de tu proyecto en <code>config.js</code> (sección <code>FIREBASE</code>); los pasos están en <code>README.md</code>. Mientras tanto puedes ver cómo se verá el panel con datos de ejemplo:</p>
+<a class="btn" href="#demo" onclick="setTimeout(()=>location.reload())">Ver ejemplo</a></section>
+
+<section id="login" class="card login hide"><h2 class="script gold" style="font-size:40px;margin:0;text-align:center">Entrar</h2>
+<label for="em">Correo</label><input id="em" type="email" autocomplete="username">
+<label for="pw">Contraseña</label><input id="pw" type="password" autocomplete="current-password">
+<div class="err" id="lerr"></div><button class="btn" id="lgo" style="width:100%">Entrar</button></section>
+
+<div id="app" class="hide">
+ <div class="bar"><div class="tabs"><button class="on" data-t="c">Confirmaciones</button><button data-t="l">Enlaces</button></div>
+ <div><button class="btn ghost sm" id="csv">Descargar CSV</button> <button class="btn ghost sm hide" id="out">Salir</button></div></div>
+ <div class="banner hide" id="demoB">Datos de ejemplo — no son reales.</div>
+ <div class="err" id="aerr"></div>
+
+ <div id="tc">
+  <section class="card"><div class="tiles" id="tiles"></div></section>
+  <section class="card"><div class="sc" style="margin-bottom:8px">Menú elegido</div><div id="dishes"></div></section>
+  <section class="card"><div class="chips" id="chips"></div>
+   <input id="q" placeholder="Buscar familia…" style="max-width:320px">
+   <div class="wrap"><table><thead><tr><th>Familia</th><th>Cupos</th><th>Estado</th><th>Asisten</th><th>Menú</th><th>Respondió</th><th></th></tr></thead><tbody id="tb"></tbody></table></div>
+   <p class="note" id="empty"></p></section>
+ </div>
+
+ <div id="tl" class="hide"><section class="card"><p class="note" style="margin-top:0">Un enlace por familia: ya trae su nombre y sus cupos. Se editan en <code>config.js</code>.</p><div id="lks"></div></section></div>
+</div>
+</main>
+
+<script src="config.js"></script>
+<script type="module">
+const B=window.BODA||{},$=id=>document.getElementById(id);
+const DISHES=B.DISHES||[],demo=location.hash==="#demo";
+const norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/\s+/g," ").trim();
+let FAM=B.FAMILIAS||[],resp=[],filter="all",query="",FS=null,DB=null;
+
+/* ---------- datos de ejemplo ---------- */
+if(demo){
+ FAM=[["perez","Familia Pérez",4],["gomez","Familia Gómez",3],["tia-rosa","Tía Rosa",2],["mejia","Familia Mejía",5],["luis","Luis y Ana",2],["vega","Familia Vega",3]];
+ const d=n=>new Date(Date.now()-n*864e5);
+ resp=[{id:"perez",familia:"perez",nombre:"Familia Pérez",asiste:true,asistentes:4,menu:[1,1,2,3],ts:d(3)},
+  {id:"gomez",familia:"gomez",nombre:"Familia Gómez",asiste:true,asistentes:2,menu:[2,3],ts:d(2)},
+  {id:"tia-rosa",familia:"tia-rosa",nombre:"Tía Rosa",asiste:false,asistentes:0,menu:[],ts:d(1)},
+  {id:"x1",familia:"",nombre:"Carlos (compañero de Brando)",asiste:true,asistentes:1,menu:[1],ts:d(0)}];
+}
+
+/* ---------- vistas ---------- */
+function showApp(){$("login").classList.add("hide");$("app").classList.remove("hide");render();links()}
+function init(){
+ $("demoB").classList.toggle("hide",!demo);
+ if(demo){showApp();return}
+ const c=B.FIREBASE;
+ if(!c||!c.apiKey){$("setup").classList.remove("hide");return}
+ startFirebase(c)}
+
+async function startFirebase(c){
+ const V="https://www.gstatic.com/firebasejs/10.14.1/";
+ const [{initializeApp},A,fs]=await Promise.all([import(V+"firebase-app.js"),import(V+"firebase-auth.js"),import(V+"firebase-firestore.js")]);
+ FS=fs;const app=initializeApp(c),auth=A.getAuth(app);DB=fs.getFirestore(app);
+ $("out").classList.remove("hide");$("out").onclick=()=>A.signOut(auth);
+ const go=async()=>{$("lerr").textContent="";try{await A.signInWithEmailAndPassword(auth,$("em").value.trim(),$("pw").value)}catch(e){$("lerr").textContent="Correo o contraseña incorrectos."}};
+ $("lgo").onclick=go;$("pw").onkeydown=e=>{if(e.key==="Enter")go()};
+ let unsub=null;
+ A.onAuthStateChanged(auth,u=>{
+  if(unsub){unsub();unsub=null}
+  if(!u){$("app").classList.add("hide");$("login").classList.remove("hide");return}
+  showApp();
+  unsub=fs.onSnapshot(fs.collection(DB,"rsvp"),s=>{$("aerr").textContent="";resp=s.docs.map(d=>({id:d.id,...d.data()}));render()},
+   e=>{$("aerr").textContent="No se pudieron leer las respuestas. Revisa que tu correo esté en las reglas de Firestore (README, paso 5)."})})}
+
+/* ---------- cálculo ---------- */
+function build(){
+ const used=new Set(),rows=[];
+ FAM.forEach(([slug,name,cupos])=>{
+  let r=resp.find(x=>x.id===slug||x.familia===slug)||resp.find(x=>!x.familia&&!used.has(x.id)&&norm(x.nombre)===norm(name));
+  if(r)used.add(r.id);rows.push({fam:name,cupos,r,slug})});
+ resp.forEach(r=>{if(!used.has(r.id))rows.push({fam:r.nombre,cupos:null,r,extra:true})});
+ return rows}
+const status=x=>!x.r?"wait":x.r.asiste?"ok":"no";
+const fecha=t=>{const d=t&&t.toDate?t.toDate():t instanceof Date?t:null;return d?d.toLocaleDateString("es-CO",{day:"numeric",month:"short"})+" "+d.toLocaleTimeString("es-CO",{hour:"2-digit",minute:"2-digit"}):"—"};
+
+function render(){
+ const rows=build();
+ const conf=rows.filter(x=>status(x)==="ok"),no=rows.filter(x=>status(x)==="no"),wait=rows.filter(x=>status(x)==="wait");
+ const personas=conf.reduce((a,x)=>a+(+x.r.asistentes||0),0);
+ const cupos=FAM.reduce((a,f)=>a+f[2],0);
+ const T=[[personas,"Personas confirmadas"],[cupos,"Cupos asignados"],[conf.length+no.length+" / "+rows.length,"Familias que respondieron"],[no.length,"No asisten"],[wait.length,"Pendientes"]];
+ $("tiles").replaceChildren(...T.map(([n,l])=>{const d=document.createElement("div");d.className="tile";const b=document.createElement("b");b.textContent=n;const s=document.createElement("span");s.textContent=l;d.append(b,s);return d}));
+ /* menú */
+ const cnt=DISHES.map(()=>0);conf.forEach(x=>(x.r.menu||[]).forEach(k=>{if(cnt[k-1]!=null)cnt[k-1]++}));
+ const mx=Math.max(1,...cnt);
+ $("dishes").replaceChildren(...DISHES.map((d,i)=>{const w=document.createElement("div");w.className="dish";const a=document.createElement("span");a.textContent=(i+1)+". "+d;const bar=document.createElement("div");const f=document.createElement("i");f.style.width=(cnt[i]/mx*100)+"%";bar.append(f);const n=document.createElement("b");n.textContent=cnt[i];w.append(a,bar,n);return w}));
+ /* filtros */
+ const C=[["all","Todos ("+rows.length+")"],["ok","Confirmaron ("+conf.length+")"],["no","No asisten ("+no.length+")"],["wait","Pendientes ("+wait.length+")"]];
+ $("chips").replaceChildren(...C.map(([k,l])=>{const b=document.createElement("button");b.textContent=l;if(k===filter)b.className="on";b.onclick=()=>{filter=k;render()};return b}));
+ /* tabla */
+ const vis=rows.filter(x=>(filter==="all"||status(x)===filter)&&(!query||norm(x.fam).includes(query)));
+ $("tb").replaceChildren(...vis.map(x=>{
+  const tr=document.createElement("tr"),st=status(x);
+  const cell=(v)=>{const td=document.createElement("td");if(v instanceof Node)td.append(v);else td.textContent=v;tr.append(td);return td};
+  cell(x.fam);cell(x.cupos==null?"—":x.cupos);
+  const s=document.createElement("span");s.className="st "+st;s.textContent=st==="ok"?"Confirmó":st==="no"?"No asiste":"Pendiente";cell(s);
+  cell(x.r?(x.r.asiste?x.r.asistentes:0):"—");
+  const m=document.createElement("div");m.className="mn";(x.r&&x.r.menu||[]).forEach((k,i)=>{const l=document.createElement("div");l.textContent="P"+(i+1)+": "+(DISHES[k-1]||"?");m.append(l)});if(!m.children.length)m.textContent="—";cell(m);
+  cell(x.r?fecha(x.r.ts):"—");
+  const del=document.createElement("button");del.className="x";del.title="Borrar respuesta";del.textContent="×";del.hidden=!x.r;
+  del.onclick=async()=>{if(!confirm("¿Borrar la respuesta de "+x.fam+"? Podrá volver a confirmar."))return;if(demo){resp=resp.filter(r=>r.id!==x.r.id);render();return}try{await FS.deleteDoc(FS.doc(DB,"rsvp",x.r.id))}catch(e){$("aerr").textContent="No se pudo borrar."}};
+  cell(del);return tr}));
+ $("empty").textContent=vis.length?"":"Nada que mostrar con este filtro.";
+ window.__rows=rows}
+$("q").oninput=e=>{query=norm(e.target.value);render()};
+
+/* ---------- enlaces ---------- */
+function links(){
+ const base=new URL("index.html",location.href).href;
+ $("lks").replaceChildren(...FAM.map(([slug,name,cupos])=>{
+  const u=base+"#"+slug,d=document.createElement("div");d.className="lk";
+  const b=document.createElement("b");b.textContent=name;const sm=document.createElement("small");sm.textContent=cupos+(cupos==1?" cupo":" cupos");
+  const row=document.createElement("div");row.className="row";
+  const inp=document.createElement("input");inp.readOnly=true;inp.value=u;inp.onclick=()=>inp.select();
+  const cp=document.createElement("button");cp.className="btn ghost sm";cp.textContent="Copiar";cp.onclick=async()=>{try{await navigator.clipboard.writeText(u);cp.textContent="¡Copiado!"}catch(e){inp.select()}setTimeout(()=>cp.textContent="Copiar",1500)};
+  const wa=document.createElement("a");wa.className="btn sm";wa.target="_blank";wa.rel="noopener";wa.textContent="WhatsApp";
+  wa.href="https://wa.me/?text="+encodeURIComponent("Hola "+name+" 💌 Sandra y Brando los invitan a su boda. Abran su invitación aquí: "+u);
+  row.append(inp,cp,wa);d.append(b,sm,row);return d}))}
+
+/* ---------- CSV ---------- */
+$("csv").onclick=()=>{
+ const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+ const L=[["Familia","Cupos","Estado","Asisten","Menú","Respondió"]];
+ (window.__rows||[]).forEach(x=>L.push([x.fam,x.cupos??"",{ok:"Confirmó",no:"No asiste",wait:"Pendiente"}[status(x)],x.r?(x.r.asiste?x.r.asistentes:0):"",(x.r&&x.r.menu||[]).map((k,i)=>"P"+(i+1)+": "+(DISHES[k-1]||"?")).join("; "),x.r?fecha(x.r.ts):""]));
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+L.map(r=>r.map(q).join(",")).join("\n")],{type:"text/csv"}));a.download="confirmaciones-boda.csv";a.click()};
+
+/* ---------- pestañas ---------- */
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x===b));$("tc").classList.toggle("hide",b.dataset.t!=="c");$("tl").classList.toggle("hide",b.dataset.t!=="l")});
+window.addEventListener("hashchange",()=>location.reload());
+init();
+</script></body></html>

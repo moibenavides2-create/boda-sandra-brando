@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Solo estos correos (los de Sandra y Brando) pueden ver y borrar respuestas.
+    function esNovio() {
+      return request.auth != null
+        && request.auth.token.email in ['CORREO_DE_SANDRA@gmail.com', 'CORREO_DE_BRANDO@gmail.com'];
+    }
+
+    match /rsvp/{id} {
+      allow read, update, delete: if esNovio();
+
+      // Cualquier invitado puede CREAR una respuesta (no leer ni modificar las demás).
+      allow create: if request.resource.data.keys().hasOnly(['familia','nombre','asiste','asistentes','menu','ts'])
+        && request.resource.data.nombre is string
+        && request.resource.data.nombre.size() > 0 && request.resource.data.nombre.size() <= 80
+        && request.resource.data.familia is string && request.resource.data.familia.size() <= 40
+        && request.resource.data.asiste is bool
+        && request.resource.data.asistentes is int
+        && request.resource.data.asistentes >= 0 && request.resource.data.asistentes <= 10
+        && request.resource.data.menu is list && request.resource.data.menu.size() <= 10
+        && request.resource.data.ts == request.time;
+    }
+  }
+}
