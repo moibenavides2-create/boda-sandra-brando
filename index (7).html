@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light">
+<meta name="theme-color" content="#faf7f1">
+<title>Sandra &amp; Brando · Invitación de boda</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,600&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap">
+<style>
+:root{color-scheme:light;--bg:#faf7f1;--ink:#3f3a36;--mu:#8a8478;--sage:#8a9a89;--forest:#3b5646;--rose:#e8a0b4;--rose2:#d97a96;--gold:#b8923a;--gold2:#e0c981;--card:rgba(255,253,249,.94);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{overflow-x:clip;color-scheme:only light;background:#faf7f1}
+body{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;color:var(--ink);background:radial-gradient(70% 36% at 0 0,#f8e3e6,transparent 70%),radial-gradient(60% 30% at 100% 40%,#f7e7d6,transparent 70%),radial-gradient(70% 34% at 0 82%,#f8e3e6,transparent 70%);background-color:var(--bg);text-align:center;overflow-x:hidden}
+.script{font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400}
+.sc{font-family:Montserrat,"Helvetica Neue",Arial,sans-serif;font-weight:400;letter-spacing:.32em;text-transform:uppercase;font-size:clamp(11px,3.1vw,14px)}
+/* padding + line-height: el degradado solo pinta dentro de la caja; sin esto se cortan las mayúsculas cursivas */
+.gold{background:linear-gradient(100deg,#8f6a1f,#d6b152,#a37a2b 55%,#e2c673,#8f6a1f);-webkit-background-clip:text;background-clip:text;color:transparent;padding:.32em .28em .24em;line-height:1.3;overflow:visible}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:2;overflow:hidden}
+.p{position:absolute;top:-6vh;width:var(--s);height:calc(var(--s)*1.3);background:radial-gradient(circle at 30% 30%,#ffe0e8,var(--rose));border-radius:70% 0 70% 30%;opacity:.7;animation:fall var(--d) linear var(--l) infinite}
+@keyframes fall{0%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(var(--x),55vh,0) rotate(200deg)}100%{transform:translate3d(0,112vh,0) rotate(380deg)}}
+@keyframes float{50%{translate:0 -9px}}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+#intro{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,4.5vh,40px);padding:20px;background:radial-gradient(circle at 50% 35%,#fffdf8,#f6efe3 75%);transition:opacity 1s}
+#intro.out{opacity:0;pointer-events:none}
+#intro>*{position:relative;z-index:1;animation:up 1.2s both}
+#intro .rosa{position:absolute;z-index:0;width:clamp(170px,50vw,250px);height:auto;pointer-events:none;animation:none;filter:drop-shadow(0 10px 12px rgba(90,20,30,.25))}
+#intro .rosa.a{top:-10px;left:-28px}#intro .rosa.b{bottom:-10px;right:-28px;transform:scaleX(-1)}
+
+#fam{font-size:clamp(40px,12.5vw,58px);line-height:1.1;margin:0;animation-delay:.35s!important}
+#cup{color:var(--forest);animation-delay:.6s!important}
+.env{position:relative;width:min(88vw,430px);aspect-ratio:200/104;border:0;padding:0;border-radius:3px;overflow:hidden;cursor:pointer;background:none;box-shadow:0 34px 50px -20px rgba(90,70,40,.4),0 10px 22px rgba(0,0,0,.08);animation:up 1.2s .85s both,float 6s 2.2s ease-in-out infinite;transition:scale .9s}
+.env svg{position:absolute;inset:0;width:100%;height:100%}
+.seal{position:absolute;left:50%;top:59.6%;translate:-50% -50%;width:22%;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 35% 30%,#2f5240,#12281c 72%);border:3px solid var(--gold);box-shadow:0 0 0 9px rgba(180,160,110,.28),0 10px 18px rgba(0,0,0,.35),inset 0 2px 6px rgba(255,255,255,.14);font:italic 600 clamp(15px,4.6vw,21px) "Cormorant Garamond",Georgia,serif;color:#dcbc5e;transition:scale .7s,opacity .7s}
+.env.open{scale:1.1}.env.open .seal{scale:1.6;opacity:0}
+#tap{cursor:pointer;color:var(--forest);animation-delay:1.3s!important}
+#tap:before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;background:#d2ad5c;margin-right:14px;animation:pl 1.6s infinite}
+@keyframes pl{50%{opacity:.25;scale:.7}}
+.btn{border:0;cursor:pointer;font:600 17px "Cormorant Garamond",Georgia,serif;letter-spacing:.12em;text-transform:uppercase;color:#fff;padding:14px 30px;border-radius:40px;background:linear-gradient(135deg,#b8923a,#dcc26e,#b8923a);box-shadow:0 8px 22px rgba(184,146,58,.4);text-decoration:none;display:inline-block}
+main{position:relative;z-index:3;max-width:620px;margin:0 auto;padding:0 18px 70px}
+.hero{position:relative;padding:92px 0 20px}
+.hero .c{position:absolute;top:-14px;width:clamp(120px,36vw,170px);height:auto;pointer-events:none;filter:drop-shadow(0 8px 10px rgba(90,20,30,.25))}.hero .c1{left:-18px}.hero .c2{right:-18px;transform:scaleX(-1)}
+.anillos{display:block;margin:0 auto;width:clamp(110px,30vw,150px);height:auto;filter:drop-shadow(0 8px 10px rgba(90,70,40,.3));animation:float 6s ease-in-out infinite}
+.hero h2{font-size:clamp(58px,17vw,92px);margin:0;line-height:1.25}
+.hero p{margin:6px 0;color:var(--mu)}
+.sec{margin:28px 0}
+.card{background:var(--card);border:1px solid var(--gold2);border-radius:22px;padding:28px 20px;box-shadow:0 30px 50px -22px rgba(120,80,70,.4),0 12px 26px rgba(120,80,70,.12),inset 0 1px 0 #fff;backdrop-filter:blur(6px);animation:float 6.5s ease-in-out infinite}
+.sec:nth-of-type(3){animation-delay:-2.2s}.sec:nth-of-type(4){animation-delay:-4.4s}.sec:nth-of-type(5){animation-delay:-1.3s}
+h3{font-size:42px;margin:-8px 0 4px;font-weight:400}
+.rv{opacity:0;transform:translateY(44px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.cd div{border:1px solid var(--gold2);border-radius:16px;padding:14px 0;background:rgba(232,160,180,.1)}
+.cd b{display:block;font-size:34px;font-weight:600}.cd span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.map{display:block;height:220px;border-radius:16px;margin:16px 0;background:linear-gradient(135deg,rgba(232,160,180,.22),rgba(224,201,129,.3));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.map:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 28px,rgba(184,146,58,.22) 28px 29px),repeating-linear-gradient(90deg,transparent 0 28px,rgba(184,146,58,.22) 28px 29px)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.pin{position:relative;font-size:46px;animation:bob 2s ease-in-out infinite}
+.verso{padding:6px 10px 0}.verso:before{content:"";display:block;width:90px;height:1px;margin:0 auto 22px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.verso blockquote{margin:0 auto;max-width:30em;font-size:clamp(21px,5.6vw,25px);line-height:1.5;font-style:italic;font-weight:600;color:var(--forest)}
+.verso cite{display:block;margin-top:14px;font-style:normal;color:var(--gold)}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.menu{text-align:left;margin:10px 0 18px;padding:0;list-style:none}
+.menu li{padding:10px 12px;border-left:3px solid var(--gold);background:rgba(232,160,180,.1);margin:8px 0;border-radius:0 12px 12px 0;font-size:18px}
+input,select{width:100%;font:inherit;font-size:18px;color:var(--ink);background:#fff;border:1px solid var(--gold2);border-radius:12px;padding:12px;margin:6px 0}
+label{display:block;text-align:left;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin-top:10px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 4px}
+.seg button{font:inherit;font-size:17px;padding:12px 6px;border-radius:12px;border:1px solid var(--gold2);background:transparent;color:var(--ink);cursor:pointer}
+.seg button.on{background:var(--rose);color:#fff;border-color:var(--rose2)}
+.note{font-size:15px;color:var(--mu);margin:8px 0}
+.warn{color:var(--rose2);font-size:16px;min-height:20px;margin:6px 0}
+#music{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--card);font-size:20px;cursor:pointer;display:none}
+.hide{display:none!important}
+@media (prefers-reduced-motion:reduce){.p{display:none}.card,.env{animation:none}.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="pa" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5ecda"/><stop offset="1" stop-color="#eadec6"/></linearGradient>
+<g id="evg"><rect width="200" height="104" fill="url(#pa)"/><path d="M0 104L88 50M200 104L112 50" stroke="#cdbf9f" stroke-opacity=".6" fill="none" stroke-width=".7"/><path d="M0 0L100 62L200 0Z" fill="#e9ddc6"/><path d="M0 0L100 62L200 0" fill="none" stroke="#d3c4a4" stroke-width=".8"/></g>
+</defs></svg>
+<div id="petals"></div>
+<div id="intro"><img class="rosa a" src="assets/rosas.png" alt=""><img class="rosa b" src="assets/rosas.png" alt="">
+<div class="sc" style="color:var(--sage);animation-delay:.1s">Tienes una invitación</div>
+<h1 id="fam" class="script gold"></h1>
+<div class="sc" id="cup"></div>
+<button class="env" id="open" aria-label="Abrir invitación"><svg viewBox="0 0 200 104" preserveAspectRatio="none"><use href="#evg"/></svg><span class="seal">S&amp;B</span></button>
+<div class="sc" id="tap">Toca para abrir</div></div>
+<button id="music" title="Música">🔊</button>
+<audio id="aud" loop preload="metadata" src="assets/musica.mp3"></audio>
+
+<main id="guest">
+<section class="hero rv"><img class="c c1" src="assets/rosas.png" alt=""><img class="c c2" src="assets/rosas.png" alt="">
+<img class="anillos" src="assets/anillos.png" alt="Anillos de matrimonio">
+<p class="sc">Con la bendición de Dios</p><h2 class="script gold">Sandra &amp; Brando</h2>
+<p class="sc">18 · enero · 2027 &nbsp;|&nbsp; 7:00 p. m.</p></section>
+
+<section class="sec rv card"><h3 class="script gold">Faltan</h3>
+<div class="cd"><div><b id="d">0</b><span>días</span></div><div><b id="h">0</b><span>horas</span></div><div><b id="m">0</b><span>min</span></div><div><b id="s">0</b><span>seg</span></div></div>
+<p id="cdmsg" class="note"></p></section>
+
+<section class="sec rv card"><h3 class="script gold">Ubicación</h3>
+<p style="margin:4px 0"><b>Restaurante Itamar</b></p><p style="margin:4px 0">Calle 76 #52-08<br>Barranquilla, Atlántico</p>
+<a class="map" id="mapbox" target="_blank" rel="noopener" href="https://maps.app.goo.gl/91wsb37i2hopT8Fm6" aria-label="Ver Restaurante Itamar en Google Maps"><div class="pin">📍</div></a>
+<a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/91wsb37i2hopT8Fm6">Abrir en Google Maps</a></section>
+
+<section class="sec rv card"><svg width="120" height="62" viewBox="0 0 200 104" style="filter:drop-shadow(0 6px 8px rgba(90,70,40,.3))"><use href="#evg"/><circle cx="100" cy="62" r="12" fill="#173323" stroke="#b8923a" stroke-width="2.5"/></svg>
+<h3 class="script gold">Lluvia de sobres</h3>
+<p style="margin:0">Tu presencia es el mejor regalo que podemos recibir. Si deseas tener un detalle con nosotros, agradecemos de corazón una lluvia de sobres el día de la celebración.</p></section>
+
+<section class="sec rv card"><h3 class="script gold">Confirma tu asistencia</h3>
+<p class="note">Menú de la noche (elige uno por persona)</p>
+<ul class="menu"><li><b>1.</b> Pollo grillado en salsa bechamel con papas a la francesa y ensalada fresca</li><li><b>2.</b> Arroz salteado al wok con pollo</li><li><b>3.</b> Pastas a la Alfredo con pan al ajo</li></ul>
+<div id="rs">
+<div class="seg"><button class="on" id="yes">Sí, asistiré</button><button id="no">No podré asistir</button></div>
+<div id="nmw"><label for="nm">Tu nombre o el de tu familia</label><input id="nm" autocomplete="off" placeholder="Ej. Familia Pérez"></div>
+<div id="att"><label for="n">Personas que asistirán</label><select id="n"></select><div id="pp"></div></div>
+<div class="warn" id="w"></div><button class="btn" id="go">Confirmar</button></div>
+<div id="done" class="hide"><p class="script gold" style="font-size:40px;margin:6px 0">¡Gracias!</p><p id="dmsg"></p><a class="btn hide" id="wa" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
+</section>
+<p class="script gold" style="font-size:38px;margin-top:40px">Los esperamos</p>
+<section class="verso rv" style="margin-top:26px"><blockquote>«Por tanto, dejará el hombre a su padre y a su madre, y se unirá a su mujer, y serán una sola carne.»</blockquote><cite class="sc">Génesis 2:24</cite></section>
+</main>
+
+
+<script src="config.js"></script>
+<script type="module">
+const B=window.BODA||{},WHATSAPP=B.WHATSAPP||"",FAMILIAS=B.FAMILIAS||[],MAX=B.MAX||4,DISHES=B.DISHES||[];
+const $=i=>document.getElementById(i);
+const h=decodeURIComponent(location.hash.slice(1));let F=null;
+FAMILIAS.forEach(x=>{if(x[0]===h)F={s:x[0],n:x[1],c:x[2]}});
+window.addEventListener("hashchange",()=>location.reload());
+$("fam").textContent=F?F.n:"Querido invitado";
+$("cup").textContent=F?"Invitación para "+F.c+(F.c==1?" persona":" personas"):"Te esperamos en nuestra boda";
+if(F)$("nmw").classList.add("hide");
+/* mapa incrustado (si falla, queda el fondo con el pin) */
+if(B.MAPS_EMBED){const f=document.createElement("iframe");f.src=B.MAPS_EMBED;f.loading="lazy";f.title="Mapa";f.setAttribute("tabindex","-1");f.style.pointerEvents="none";$("mapbox").appendChild(f)}
+/* pétalos */
+(function(){const c=$("petals");for(let i=0;i<20;i++){const p=document.createElement("span");p.className="p";const st=p.style;st.left=Math.random()*100+"%";st.setProperty("--s",(9+Math.random()*12)+"px");st.setProperty("--d",(9+Math.random()*9)+"s");st.setProperty("--l",(-Math.random()*14)+"s");st.setProperty("--x",(Math.random()*90-45)+"px");c.appendChild(p)}})();
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+/* sobre + música */
+const aud=$("aud"),mb=$("music");let playing=false,opened=false;
+const setM=()=>{mb.textContent=playing?"🔊":"🔇"};
+function abrir(){if(opened)return;opened=true;$("open").classList.add("open");setTimeout(()=>$("intro").classList.add("out"),800);setTimeout(()=>$("intro").classList.add("hide"),1900);mb.style.display="block";aud.volume=.6;aud.play().then(()=>{playing=true;setM()}).catch(()=>setM())}
+$("open").onclick=abrir;$("tap").onclick=abrir;
+mb.onclick=()=>{if(playing){aud.pause();playing=false}else{aud.play();playing=true}setM()};
+/* cuenta regresiva */
+const T=new Date("2027-01-18T19:00:00-05:00").getTime();
+function tick(){const r=T-Date.now();if(r<=0){["d","h","m","s"].forEach(k=>{$(k).textContent=0});$("cdmsg").textContent="¡Hoy celebramos nuestro gran día!";return}
+$("d").textContent=Math.floor(r/864e5);$("h").textContent=Math.floor(r%864e5/36e5);$("m").textContent=Math.floor(r%36e5/6e4);$("s").textContent=Math.floor(r%6e4/1e3)}
+tick();setInterval(tick,1000);
+/* confirmación */
+let coming=true;
+const cupos=()=>F?F.c:MAX;
+function drawN(){const c=cupos(),n=$("n");n.innerHTML="";for(let i=1;i<=c;i++){const o=document.createElement("option");o.value=i;o.textContent=i+(i==1?" persona":" personas");n.appendChild(o)}n.value=c;drawP()}
+function drawP(){let t="";for(let i=1;i<=+$("n").value;i++){t+='<label>Menú persona '+i+'</label><select class="mn"><option value="0">Elige un plato…</option>'+DISHES.map((d,k)=>'<option value="'+(k+1)+'">'+(k+1)+'. '+d+'</option>').join("")+'</select>'}$("pp").innerHTML=t}
+$("n").onchange=drawP;drawN();
+function seg(y){coming=y;$("yes").classList.toggle("on",y);$("no").classList.toggle("on",!y);$("att").classList.toggle("hide",!y)}
+$("yes").onclick=()=>seg(true);$("no").onclick=()=>seg(false);
+/* Firebase: se carga solo si config.js tiene las llaves */
+async function guardar(data){
+  const c=B.FIREBASE;if(!c||!c.apiKey)return false;
+  const V="https://www.gstatic.com/firebasejs/10.14.1/";
+  const [{initializeApp},fs]=await Promise.all([import(V+"firebase-app.js"),import(V+"firebase-firestore.js")]);
+  const db=fs.getFirestore(initializeApp(c));
+  const doc={...data,ts:fs.serverTimestamp()};
+  if(F)await fs.setDoc(fs.doc(db,"rsvp",F.s),doc);   /* una respuesta por familia */
+  else await fs.addDoc(fs.collection(db,"rsvp"),doc);
+  return true}
+$("go").onclick=async function(){
+  const nm=F?F.n:$("nm").value.trim(),w=$("w"),n=+$("n").value,mn=[].slice.call(document.querySelectorAll(".mn")).map(s=>+s.value);
+  if(!nm){w.textContent="Escribe tu nombre.";return}
+  if(coming&&mn.indexOf(0)>-1){w.textContent="Elige el menú de cada persona.";return}
+  w.textContent="";this.disabled=true;
+  const menu=mn.map((k,i)=>"P"+(i+1)+": "+DISHES[k-1]).join("; ");
+  const msg="💍 Confirmación Boda Sandra & Brando\nNombre: "+nm+"\n"+(coming?"Asistentes: "+n+"\nMenú: "+menu:"Asistentes: 0 (no podrá asistir)");
+  let saved=false,fail=false;
+  try{saved=await guardar({familia:F?F.s:"",nombre:nm,asiste:coming,asistentes:coming?n:0,menu:coming?mn:[]})}catch(e){fail=true;console.warn(e)}
+  $("rs").classList.add("hide");$("done").classList.remove("hide");
+  $("dmsg").textContent=saved?(coming?"Tu respuesta quedó registrada. ¡Nos vemos pronto!":"Gracias por avisarnos. ¡Te vamos a extrañar!"):
+    fail?"No pudimos guardar tu respuesta en línea (quizá ya la enviaste antes). Puedes enviarla por WhatsApp:":"Último paso: toca el botón para enviar tu confirmación por WhatsApp.";
+  if(!saved){const a=$("wa");a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(msg);a.classList.remove("hide")}};
+</script></body></html>
