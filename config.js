@@ -7,10 +7,10 @@ window.BODA = {
   /* Firebase (ver README.md, paso a paso). Mientras apiKey esté vacío,
      la invitación manda la confirmación por WhatsApp. */
   FIREBASE: {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    appId: ""
+    apiKey: "AIzaSyCHgei7I4WMFlCP7mJjAAP1E_Pg1S5ZCH4",
+    authDomain: "boda-sandra-brando.firebaseapp.com",
+    projectId: "boda-sandra-brando",
+    appId: "1:1234567890:web:abc123"
   },
 
   /* Número de WhatsApp de Sandra con indicativo, sin + ni espacios. Ej: 573001234567 */
