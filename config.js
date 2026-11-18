@@ -19,6 +19,8 @@ window.BODA = {
   /* Máximo de personas cuando el invitado entra por el link general (sin familia) */
   MAX: 1,
 
+  FECHA_LIMITE: "2026-12-06T23:59:59-05:00",
+
   /* Platos del menú, en orden (1, 2, 3) */
   DISHES: [
     "Pollo grillado en salsa bechamel",
@@ -66,6 +68,7 @@ window.BODA = {
       ["alix-cristian", "Alix Morales y Cristian Grau", 2],
       ["maritza-jose", "Maritza Dávila y José L. Fonseca", 2],
       ["alvaro-oneida", "Alvaro Morales y Oneida Mejía", 2],
+      ["genesis-guzman", "Génesis Guzman", 1],
   ], 
 
   /* Lugar */
