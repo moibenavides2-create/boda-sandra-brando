@@ -50,7 +50,6 @@ window.BODA = {
       ["dionner-yudex", "Dionner Yudex", 2],
       ["blanco-jeronimo", "Familia Blanco Jerónimo", 2],
       ["sofia-rudas", "Sofía Rudas", 1],
-      ["montes-benavides", "Familia Montes Benavides", 4],
       ["mercedes-luis", "Mercedes Villalba y Luis Carlos Duque", 2],
       ["carlos-ana", "Carlos Villalba y Ana Morales", 2],
       ["mirna-eliecer", "Mirna Villalba y Eliécer Valiente", 2],
