@@ -64,7 +64,7 @@ window.BODA = {
       ["agustin-hernandez", "Agustin Hernandez", 1],
       ["luz-estela", "Luz Stella Olivera", 1],
       ["dayana-jorge", "Dayana Charris y Jorge Valdez", 2],
-      ["maria-lewis", "Maria Fernanda y Lewis Vengoechea", 2],
+      ["ruth-oscar", "Ruth Morales y Oscar Vengoechea", 2],
       ["alix-cristian", "Alix Morales y Cristian Grau", 2],
       ["maritza-jose", "Maritza Dávila y José L. Fonseca", 2],
       ["alvaro-oneida", "Alvaro Morales y Oneida Mejía", 2],
