@@ -69,6 +69,7 @@ window.BODA = {
       ["maritza-jose", "Maritza Dávila y José L. Fonseca", 2],
       ["alvaro-oneida", "Alvaro Morales y Oneida Mejía", 2],
       ["genesis-guzman", "Génesis Guzman", 1],
+      ["de-la-hoz-benavides", "Familia De la Hoz Benavides", 2],
   ], 
 
   /* Lugar */
